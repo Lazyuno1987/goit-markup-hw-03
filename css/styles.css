@@ -1,0 +1,236 @@
+:root{
+    --first-color:#212121;
+    --accent-color:#2196F3;
+    --second-color:#757575;
+    --other-color: #FFFFFF;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif ;
+    color: var(--first-color);
+}
+
+.list{
+list-style: none;
+}
+.link{
+    text-decoration: none;
+   
+}
+/* Стилизация header  */
+
+
+.header-logo-link{
+font-family: "Raleway";
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+letter-spacing: 0.03em;
+color: var(--accent-color);
+}
+
+
+
+/* Стилизация Nav */
+
+.nav-item .link{
+font-family: "Roboto";
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--first-color);
+}
+.nav-item .link:hover, 
+.nav-item .link:focus{
+color: var(--accent-color);
+}
+.nav-list .link-current{
+    color: var(--accent-color);
+}
+
+/* Стилизация контактов */
+.header-item .link{
+font-family: "Roboto";
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: #757575;
+
+}
+.header-item .link:hover,
+.header-item .link:focus{
+color: var(--accent-color) ;
+}
+/* Стилизация main */
+.main{
+    background: #2F303A
+}
+.main-title{
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: var(--other-color);
+    text-transform: uppercase;
+}
+
+.main-btn{
+font-family: "Roboto";
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+color: var(--other-color);
+background-color:  var(--accent-color);
+cursor: pointer;
+}
+.main-btn:hover, .main-btn:focus{
+background-color: #188CE8;
+}
+
+
+
+/* Стилизация hero */
+.visually-hidden{
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+
+.hero-title{
+font-family: "Roboto";
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--first-color);
+}
+.hero-text{
+font-family: Roboto;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--second-color);
+}
+/* Стилизация pre-about */
+
+
+.pre-about-title{
+font-family: "Roboto";
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-color);
+
+}
+/* Стилизация about */
+.about-title{
+font-family: "Roboto";
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+.about-after-title{
+font-family: "Roboto";
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-color);
+}
+.about-text{
+font-family: "Roboto";
+font-size: 16px;
+line-height: 1.19;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--second-color);
+}
+
+/* Стилизация footer */
+.logo-link:hover, .logo-link:focus{
+color: grey;
+}
+.footer{
+    background-color: #2F303A;
+}
+
+.footer-logo{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    
+}
+.logo-link{
+font-family: "Roboto";
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--other-color);
+}
+.footer-link{
+font-family: "Roboto";
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-link:hover, .footer-link:focus{
+    color: grey;
+}
+/* Стилизация фильтров */
+.filters-btn:hover, .filters-btn:focus{
+color: var(--other-color);
+background-color: var(--accent-color);
+}
+.filters-btn{
+font-family: "Roboto";
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-color);
+background: #F5F4FA;
+}
+/* Стилизация контенту */
+.content{
+    background-color: #F5F4FA;
+}
+.content-title{
+font-family: "Roboto";
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--first-color);
+}
+.content-text{
+    font-family: "Roboto";
+font-style: normal;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color: var(--second-color);
+list-style: none;
+
+
+}
