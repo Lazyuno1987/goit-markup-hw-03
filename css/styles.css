@@ -5,10 +5,42 @@
     --other-color: #FFFFFF;
 }
 
+html{
+    box-sizing: border-box;
+}
+
+
+
 
 body{
     font-family: "Roboto", sans-serif ;
     color: var(--first-color);
+}
+
+p, h1, h2, h3, h4{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+ 
+.button{
+    cursor: pointer;
+}
+
+
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
+   
 }
 
 .list{
@@ -19,6 +51,11 @@ list-style: none;
    
 }
 /* Стилизация header  */
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+}
 
 
 .header-logo-link{
@@ -28,6 +65,7 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: var(--accent-color);
+
 }
 
 
@@ -42,6 +80,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--first-color);
 }
+
 .nav-item .link:hover, 
 .nav-item .link:focus{
 color: var(--accent-color);
@@ -51,6 +90,7 @@ color: var(--accent-color);
 }
 
 /* Стилизация контактов */
+
 .header-item .link{
 font-family: "Roboto";
 font-weight: 500;
@@ -59,6 +99,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: #757575;
 
+
 }
 .header-item .link:hover,
 .header-item .link:focus{
@@ -66,7 +107,10 @@ color: var(--accent-color) ;
 }
 /* Стилизация main */
 .main{
-    background: #2F303A
+    background: #2F303A;
+    text-align: center;
+    
+
 }
 .main-title{
     font-family: "Roboto";
@@ -75,6 +119,10 @@ color: var(--accent-color) ;
     line-height: 1.36;
     color: var(--other-color);
     text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-top: 200px;
+   
+   
 }
 
 .main-btn{
@@ -85,7 +133,12 @@ line-height: 1.88;
 color: var(--other-color);
 background-color:  var(--accent-color);
 cursor: pointer;
+border-radius: 4px;
+padding: 10px 32px;
+min-width: 200px;
+margin-bottom: 200px;
 }
+
 .main-btn:hover, .main-btn:focus{
 background-color: #188CE8;
 }
@@ -100,6 +153,14 @@ background-color: #188CE8;
     height: 1px;
     margin: -1px;
 }
+.hero{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.hero-list{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 
 
 .hero-title{
@@ -110,6 +171,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--first-color);
+margin-bottom: 10px;
 }
 .hero-text{
 font-family: Roboto;
@@ -117,8 +179,12 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--second-color);
+
 }
 /* Стилизация pre-about */
+.pre-about{
+    padding-bottom: 94px;
+}
 
 
 .pre-about-title{
@@ -129,9 +195,15 @@ line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--first-color);
+margin-bottom: 50px;
 
 }
 /* Стилизация about */
+.about{
+    background: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .about-title{
 font-family: "Roboto";
 font-weight: 700;
@@ -139,6 +211,10 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
+margin-bottom: 50px;
+}
+.about-item{
+    margin-bottom: 30px;
 }
 
 .about-after-title{
@@ -149,6 +225,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--first-color);
+margin-bottom: 10px;
 }
 .about-text{
 font-family: "Roboto";
@@ -165,15 +242,20 @@ color: grey;
 }
 .footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
 
 .footer-logo{
+
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    margin-bottom: 20px;
     
 }
 .logo-link{
@@ -183,6 +265,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--other-color);
+margin-bottom: 9px;
 }
 .footer-link{
 font-family: "Roboto";
@@ -191,6 +274,7 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+margin-bottom: 9px;
 }
 
 .footer-link:hover, .footer-link:focus{
@@ -210,10 +294,18 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--first-color);
 background: #F5F4FA;
+border-radius: 4px;
+border:1px solid transparent;
+padding: 6px 22px;
 }
 /* Стилизация контенту */
 .content{
-    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.filters-list{
+    margin-bottom: 50px;
 }
 .content-title{
 font-family: "Roboto";
