@@ -39,7 +39,7 @@ img{
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    outline: 2px solid tomato;
+   
    
 }
 
@@ -294,6 +294,8 @@ color: grey;
 
 }
 
+
+
 .footer-logo{
 
     font-family: "Raleway";
@@ -303,6 +305,7 @@ color: grey;
     letter-spacing: 0.03em;
     color: var(--accent-color);
     margin-bottom: 20px;
+    display: block;
     
 }
 .footer-contact{
@@ -318,6 +321,7 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--other-color);
 margin-bottom: 9px;
+display: block;
 
 }
 .footer-link{
@@ -327,8 +331,11 @@ font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
+display: block;
 margin-bottom: 9px;
 }
+
+
 
 .footer-link:hover, .footer-link:focus{
     color: grey;
@@ -373,20 +380,28 @@ padding: 6px 22px;
 }
 
 .content-item{
-    width: 368px;
-    border: 1px solid #EEEEEE;
+    width: 370px;
+    
     
     }
-    .content-item:not(:nth-last-child(-n + 3)){
+
+    .content-border{
+        background: var(--other-color);
+        border-left: 1px solid #EEEEEE;
+        border-right: 1px solid #EEEEEE;
+        border-bottom: 1px solid #EEEEEE;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+.content-item:not(:nth-last-child(-n + 3)){
         margin-bottom: 30px;
     }
 .content-item:not(:nth-child(3n)){
 margin-right: 30px;
 }
 
-.images{
-    margin-bottom: 20px;
-}
+
 
 
 
