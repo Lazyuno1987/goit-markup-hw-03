@@ -35,7 +35,7 @@ img{
 
 
 .container{
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -79,7 +79,7 @@ padding-bottom: 25px;
 /* Стилизация Nav */
 
 .nav-item .link{
-font-family: "Roboto";
+/* font-family: "Roboto"; */
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -119,6 +119,7 @@ color: var(--accent-color);
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
+    color: var(--accent-color);
 }
 
 .header-item:not(:last-child){
@@ -139,7 +140,7 @@ color: var(--accent-color) ;
 
 }
 .main-title{
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -174,13 +175,27 @@ background-color: #188CE8;
 
 
 /* Стилизация hero */
-.visually-hidden{
+/* .visually-hidden{
     position: absolute;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-}
+} */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .hero{
     padding-top: 94px;
     padding-bottom: 94px;
